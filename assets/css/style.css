@@ -43,17 +43,26 @@
 /**************************************
  ** - 01 - Default CSS
  **************************************/
+ @import url('https://fonts.googleapis.com/css?family=Geo&display=swap');
+:root {
+	--primary-btn-color: #5f5d5a;
+    --secondary-btn-color: #eea633;
+	--hover-btn-color: #eea633;
+	--slider-bg-color: rgb(68 75 66 / 40%) 0%;
+	--vav-menu-font-size: 19.8px
+}
+
 
 body {
 	padding: 0;
 	margin: 0;
-	font-size: 16px;
+	font-size: 24px;
 	font-weight: normal;
 	font-variant: normal;
 	overflow-x: hidden;
 	transition: all .2s ease-out;
 	-webkit-transition: all .2s ease-out;
-	font-family: 'Source Sans Pro', sans-serif;
+	font-family: 'Geo', sans-serif;
 }
 
 img {
@@ -107,7 +116,7 @@ button {
 }
 
 .color-text {
-	color: #5764ec;
+	color: var(--hover-btn-color);
 }
 
 .author-name {
@@ -137,23 +146,24 @@ a {
 
 a:hover {
 	text-decoration: none;
-	color: #5764ec;
+	color: #FFDD64;
 }
 
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
 	font-weight: 700;
 	line-height: 1.3;
 	margin: 0;
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Geo', sans-serif;
 }
 
+@import url('https://fonts.googleapis.com/css?family=Geo&display=swap');
 p {
 	font-size: 16px;
 	line-height: 1.8;
 	color: #505050;
 	margin-bottom: 15px;
 	font-weight: 400;
-	font-family: 'Source Sans Pro', sans-serif;
+	font-family: 'Geo', sans-serif;
 }
 
 p:last-child {
@@ -168,7 +178,7 @@ p:last-child {
 	overflow: hidden;
 	z-index: 1;
 	color: #ffffff;
-	background-color: #5764ec;
+	background-color: #ffc464;
 	border-radius: 0px;
 	font-weight: 600;
 	font-size: 15px;
@@ -198,8 +208,8 @@ p:last-child {
 .btn-primary {
     display: inline-block;
     color: #ffffff;
-    background-color: #5764ec;
-    background-image: linear-gradient(135deg, #ff561d 0%, #ff561d 50%, #5764ec 50%, #5764ec 100%);
+    background-color: var(--primary-btn-color);
+    background-image: linear-gradient(135deg, var(--hover-btn-color) 0%, var(--hover-btn-color) 50%, var(--primary-btn-color) 50%, var(--primary-btn-color) 100%);
     background-position: right center;
     text-align: center;
     text-decoration: none;
@@ -310,7 +320,7 @@ p:last-child {
 
 .section-title h6 {
     font-size: 15px;
-    color: #ff561d;
+    color: var(--hover-btn-color);
     font-weight: 700;
     margin-bottom: 10px;
     letter-spacing: 1px;
@@ -332,7 +342,7 @@ p:last-child {
 	top: 0;
 	right: 35px;
 	color: #ffffff;
-	background-color: #5764ec;
+	background-color: var(--primary-btn-color);
 	z-index: 4;
 	width: 45px;
 	text-align: center;
@@ -379,7 +389,7 @@ p:last-child {
 	width: 100%;
 	height: 100%;
 	z-index: -1;
-	background: #ff561d;
+	background: var(--hover-btn-color);
 	opacity: 0;
 	visibility: hidden;
 	border-radius: 0;
@@ -438,7 +448,7 @@ p:last-child {
 	animation: dash 2.5s cubic-bezier(0.35, 0.04, 0.63, 0.95) infinite;
 }
 .loader-text {
-	color: #5764ec;
+	color: var(--secondary-btn-color);
 	left: 0;
 	font-size: 16px;
 	letter-spacing: 2px;
@@ -528,7 +538,7 @@ p:last-child {
 }
 
 .navbar-area .techSoft-nav-top-bar.template-color-bg {
-	background: #5764ec;
+	background: var(--hover-btn-color);
 	border-bottom: none;
 }
 
@@ -578,7 +588,7 @@ p:last-child {
 }
 
 .techSoft-nav .navbar .navbar-nav .nav-item a {
-	font-size: 15.8px;
+	font-size: var(--vav-menu-font-size);
 	font-weight: 400;
 	color: #333;
 	text-transform: capitalize;
@@ -591,7 +601,7 @@ p:last-child {
 }
 
 .techSoft-nav .navbar .navbar-nav .nav-item a:hover, .techSoft-nav .navbar .navbar-nav .nav-item a:focus, .techSoft-nav .navbar .navbar-nav .nav-item a.active {
-	color: #5764ec;
+	color: var(--hover-btn-color);
 }
 
 .techSoft-nav .navbar .navbar-nav .nav-item a i {
@@ -610,7 +620,7 @@ p:last-child {
 }
 
 .techSoft-nav .navbar .navbar-nav .nav-item:hover a, .techSoft-nav .navbar .navbar-nav .nav-item:focus a, .techSoft-nav .navbar .navbar-nav .nav-item.active a {
-	color: #5764ec;
+	color: var(--hover-btn-color);
 }
 
 .techSoft-nav .navbar .navbar-nav .nav-item .dropdown-menu {
@@ -649,7 +659,7 @@ p:last-child {
   top: 50%;
   width: 0;
   height: 1px;
-  background-color: #5764ec;
+  background-color: var(--hover-btn-color);
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
     -webkit-transition: all 300ms ease-out;
@@ -666,7 +676,7 @@ p:last-child {
 }
 
 .techSoft-nav .navbar .navbar-nav .nav-item .dropdown-menu li a:hover, .techSoft-nav .navbar .navbar-nav .nav-item .dropdown-menu li a:focus, .techSoft-nav .navbar .navbar-nav .nav-item .dropdown-menu li a.active {
-	color: #5764ec;
+	color: var(--hover-btn-color);
 	padding-left: 5px;
 }
 
@@ -686,7 +696,7 @@ p:last-child {
 }
 
 .techSoft-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li a:hover, .techSoft-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li a:focus, .techSoft-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li a.active {
-	color: #5764ec;
+	color: var(--hover-btn-color);
 }
 
 .techSoft-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu {
@@ -702,7 +712,7 @@ p:last-child {
 }
 
 .techSoft-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li a:hover, .techSoft-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li a:focus, .techSoft-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li a.active {
-	color: #5764ec;
+	color: var(--hover-btn-color);
 }
 
 .techSoft-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu {
@@ -718,7 +728,7 @@ p:last-child {
 }
 
 .techSoft-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a:hover, .techSoft-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a:focus, .techSoft-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a.active {
-	color: #5764ec;
+	color: var(--hover-btn-color);
 }
 
 .techSoft-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu {
@@ -734,7 +744,7 @@ p:last-child {
 }
 
 .techSoft-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a:hover, .techSoft-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a:focus, .techSoft-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a.active {
-	color: #5764ec;
+	color: var(--hover-btn-color);
 }
 
 .techSoft-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu {
@@ -750,7 +760,7 @@ p:last-child {
 }
 
 .techSoft-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a:hover, .techSoft-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a:focus, .techSoft-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a.active {
-	color: #5764ec;
+	color: var(--hover-btn-color);
 }
 
 .techSoft-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu {
@@ -766,11 +776,11 @@ p:last-child {
 }
 
 .techSoft-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a:hover, .techSoft-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a:focus, .techSoft-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a.active {
-	color: #5764ec;
+	color: var(--hover-btn-color);
 }
 
 .techSoft-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li.active a {
-	color: #5764ec;
+	color: var(--hover-btn-color);
 }
 
 .techSoft-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li:hover .dropdown-menu {
@@ -782,7 +792,7 @@ p:last-child {
 }
 
 .techSoft-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li.active a {
-	color: #5764ec;
+	color: var(--hover-btn-color);
 }
 
 .techSoft-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li:hover .dropdown-menu {
@@ -794,7 +804,7 @@ p:last-child {
 }
 
 .techSoft-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li.active a {
-	color: #5764ec;
+	color: var(--hover-btn-color);
 }
 
 .techSoft-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li:hover .dropdown-menu {
@@ -806,7 +816,7 @@ p:last-child {
 }
 
 .techSoft-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li.active a {
-	color: #5764ec;
+	color: var(--hover-btn-color);
 }
 
 .techSoft-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li:hover .dropdown-menu {
@@ -818,7 +828,7 @@ p:last-child {
 }
 
 .techSoft-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li.active a {
-	color: #5764ec;
+	color: var(--hover-btn-color);
 }
 
 .techSoft-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li:hover .dropdown-menu {
@@ -830,7 +840,7 @@ p:last-child {
 }
 
 .techSoft-nav .navbar .navbar-nav .nav-item .dropdown-menu li.active a {
-	color: #5764ec;
+	color: var(--hover-btn-color);
 }
 
 .techSoft-nav .navbar .navbar-nav .nav-item .dropdown-menu li:hover .dropdown-menu {
@@ -906,7 +916,7 @@ p:last-child {
 }
 
 .navbar-area.is-sticky .navbar-nav .nav-item a:hover, .navbar-area.is-sticky .navbar-nav .nav-item a:focus, .navbar-area.is-sticky .navbar-nav .nav-item a.active {
-	color: #5764ec;
+	color: var(--hover-btn-color);
 }
 
 .navbar-area.is-sticky .techSoft-nav .navbar-brand .white-logo {
@@ -957,7 +967,7 @@ p:last-child {
 	}
 
 	.techSoft-responsive-nav .techSoft-responsive-menu.mean-container .mean-nav ul li a.active {
-		color: #5764ec;
+		color: var(--hover-btn-color);
 	}
 
 	.techSoft-responsive-nav .techSoft-responsive-menu.mean-container .mean-nav ul li li a {
@@ -1081,7 +1091,7 @@ p:last-child {
 	right: 0;
 	top: 0;
 	height: 50px;
-	background: #5764ec;
+	background: var(--hover-btn-color);
 	border: none;
 	width: 50px;
 	line-height: 53px;
@@ -1104,7 +1114,7 @@ p:last-child {
 	position: relative;
 	z-index: 1;
 	min-height: 630px;
-	background: rgb(2,0,36);
+	background: rgb(177, 176, 190);
 }
 
 .home-slider,
@@ -1135,8 +1145,8 @@ p:last-child {
 	height: 100%;
 	width: 100%;
 	z-index: -1;
-	background: rgb(2,0,36);
-	background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(227,227,255,0) 64%);
+	background: rgb(198, 198, 202);
+	background: linear-gradient(90deg, rgb(134, 134, 136) 0%, rgba(227,227,255,0) 64%);
 }
 
 .home-slider-single-item .container {
@@ -1232,13 +1242,13 @@ p:last-child {
 }
 
 .flickity-page-dots .dot.is-selected::after {
-	background-color: #5764ec;
+	background-color: var(--secondary-btn-color);
 	width: 100%;
 	height: 100%;
 }
 
 .flickity-page-dots .dot:hover::after {
-	background-color: #5764ec;
+	background-color: var(--secondary-btn-color);
 }
 
 .flickity-page-dots .dot::after {
@@ -1246,7 +1256,7 @@ p:last-child {
 	width: 10px;
 	height: 10px;
 	background-color: transparent;
-    border: 1px solid #5764ec;
+    border: 1px solid var(--secondary-btn-color);
 	margin: 0;
 	border-radius: 50%;
 	outline: 0;
@@ -3656,7 +3666,7 @@ blockquote::after, .blockquote::after {
 	position: relative;
 	z-index: 1;
 	color: #fff;
-	background: url(../img/banner-bg.jpg);
+	background: url(../img/support.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
@@ -4152,8 +4162,8 @@ blockquote::after, .blockquote::after {
 	position: relative;
 	z-index: 1;
 	padding: 20px 0;
-	background: #5764ec;
-	background: linear-gradient(to right,rgb(87 100 236) 0,rgba(58,67,74,0) 50%);
+	background: var(--hover-btn-color);
+	background: linear-gradient(to right, var(--secondary-btn-color) 0,rgba(58,67,74,0) 50%);
 }
 
 .page-title-content {
@@ -4171,7 +4181,7 @@ blockquote::after, .blockquote::after {
     display: inline-block;
     position: relative;
     font-weight: 600;
-    font-size: 13px;
+    font-size: 18px;
     margin: 0;
     letter-spacing: 0.3px;
     text-transform: uppercase;
