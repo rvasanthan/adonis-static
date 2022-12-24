@@ -48,6 +48,7 @@
 	--primary-btn-color: #5f5d5a;
     --secondary-btn-color: #eea633;
 	--hover-btn-color: #eea633;
+	--vertical-line: #eea633;
 	--slider-bg-color: rgb(68 75 66 / 40%) 0%;
 	--vav-menu-font-size: 19.8px
 }
@@ -1403,7 +1404,7 @@ p:last-child {
 
 .about-blockquote {
     padding: 5px 0px 5px 35px;
-    border-left: 2px solid #5764ec;
+    border-left: 2px solid var(--vertical-line);
     margin-top: 25px;
 }
 .about-blockquote h3 {
@@ -1541,13 +1542,13 @@ p:last-child {
 }
 
 .single-services-box-img-1:before {
-    background: url(../img/services/services-1.jpg);
+    background: url(https://res.cloudinary.com/sri-shirdi-sai-mandir/image/upload/v1667775182/adonis/software-development_ktxkki.png);
 }
 .single-services-box-img-2:before {
-    background: url(../img/services/services-2.jpg);
+    background: url(https://res.cloudinary.com/sri-shirdi-sai-mandir/image/upload/v1667776061/adonis/technology-services_ctx7ik.png);
 }
 .single-services-box-img-3:before {
-    background: url(../img/services/services-3.jpg);
+    background: url(https://res.cloudinary.com/sri-shirdi-sai-mandir/image/upload/v1667778231/adonis/digital-transformation_kyvjlk.png);
 }
 .single-services-box-img-4:before {
     background: url(../img/services/services-4.jpg);
@@ -1570,12 +1571,12 @@ p:last-child {
     transform: scale(1);
 }
 .single-services-box-1:hover {
-    background: rgb(87, 100, 236, 0.5);
+    background: rgba(44, 44, 45, 0.5);
 	box-shadow: none;
 }
 .single-services-box-1 .services-icon-12 {
     display: block;
-    color: #ff561d;
+    color: #eea633;
 	margin-bottom: 20px;
     -webkit-transition: all 400ms ease-out;
     transition: all 400ms ease-out;
