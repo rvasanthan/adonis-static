@@ -59,26 +59,26 @@ class MainMenu extends HTMLElement {
                                         <li class="nav-item"> <a href="single-project.html" class="nav-link">Single Project</a> </li>
                                     </ul>
                                 </li> -->
-                                <li class="nav-item"> <a href="#" class="nav-link">Domains <i class="fas fa-chevron-down"></i></a>
+                                <!-- <li class="nav-item"> <a href="#" class="nav-link">Domains <i class="fas fa-chevron-down"></i></a>
                                     <ul class="dropdown-menu">
                                         <li class="nav-item"> <a href="team.html" class="nav-link">Banking and Finance</a> </li>
                                         <li class="nav-item"> <a href="testimonials.html" class="nav-link">Insurance</a> </li>
                                         <li class="nav-item"> <a href="pricing.html" class="nav-link">Health Care</a> </li>
                                     </ul>
-                                </li>
-                                <li class="nav-item"> <a href="#" class="nav-link">Blog <i class="fas fa-chevron-down"></i></a>
+                                </li> -->
+                                <!-- <li class="nav-item"> <a href="#" class="nav-link">Blog <i class="fas fa-chevron-down"></i></a>
                                     <ul class="dropdown-menu">
                                         <li class="nav-item"> <a href="blog-1.html" class="nav-link">Blog Grid</a> </li>
                                         <li class="nav-item"> <a href="blog-2.html" class="nav-link">Blog Right Sidebar</a> </li>
                                         <li class="nav-item"> <a href="blog-3.html" class="nav-link">Blog Left Sidebar</a> </li>
                                         <li class="nav-item"> <a href="single-blog.html" class="nav-link">Blog Details</a> </li>
                                     </ul>
-                                </li>
-                                <li class="nav-item"> <a href="contact.html" class="nav-link">Contact <i class="fas fa-chevron-down"></i></a>
-                                    <ul class="dropdown-menu">
+                                </li> -->
+                                <li class="nav-item"> <a href="contact.html" class="nav-link">Contact </i></a>
+                                    <!-- <ul class="dropdown-menu">
                                         <li class="nav-item"> <a href="contact.html" class="nav-link">Contact 1</a> </li>
                                         <li class="nav-item"> <a href="contact-2.html" class="nav-link">Contact 2</a> </li>
-                                    </ul>
+                                    </ul> -->
                                 </li>
                             </ul>
                             <!-- <div class="option-item navber-search-box d-none d-lg-block">
